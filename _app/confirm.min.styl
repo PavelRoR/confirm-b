@@ -1,0 +1,547 @@
+@font-face {
+	font-family: 'GilroyBlack';
+	src: url('../fonts/confirm/GilroyBlack.eot');
+	src: url('../fonts/confirm/GilroyBlack.eot') format('embedded-opentype'),
+		 url('../fonts/confirm/GilroyBlack.woff2') format('woff2'),
+		 url('../fonts/confirm/GilroyBlack.woff') format('woff'),
+		 url('../fonts/confirm/GilroyBlack.ttf') format('truetype'),
+		 url('../fonts/confirm/GilroyBlack.svg#GilroyBlack') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GilroyMedium';
+	src: url('../fonts/confirm/GilroyMedium.eot');
+	src: url('../fonts/confirm/GilroyMedium.eot') format('embedded-opentype'),
+		 url('../fonts/confirm/GilroyMedium.woff2') format('woff2'),
+		 url('../fonts/confirm/GilroyMedium.woff') format('woff'),
+		 url('../fonts/confirm/GilroyMedium.ttf') format('truetype'),
+		 url('../fonts/confirm/GilroyMedium.svg#GilroyMedium') format('svg');
+	font-display: fallback;
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/confirm/Muller.eot');
+	src: url('../fonts/confirm/Muller.eot') format('embedded-opentype'),
+		 url('../fonts/confirm/Muller.woff2') format('woff2'),
+		 url('../fonts/confirm/Muller.woff') format('woff'),
+		 url('../fonts/confirm/Muller.ttf') format('truetype'),
+		 url('../fonts/confirm/Muller.svg#Muller') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MullerItalic';
+	src: url('../fonts/confirm/MullerItalic.eot');
+	src: url('../fonts/confirm/MullerItalic.eot') format('embedded-opentype'),
+		 url('../fonts/confirm/MullerItalic.woff2') format('woff2'),
+		 url('../fonts/confirm/MullerItalic.woff') format('woff'),
+		 url('../fonts/confirm/MullerItalic.ttf') format('truetype'),
+		 url('../fonts/confirm/MullerItalic.svg#MullerItalic') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: italic
+}
+@font-face {
+	font-family: 'MullerBold';
+	src: url('../fonts/confirm/MullerBold.eot');
+	src: url('../fonts/confirm/MullerBold.eot') format('embedded-opentype'),
+		 url('../fonts/confirm/MullerBold.woff2') format('woff2'),
+		 url('../fonts/confirm/MullerBold.woff') format('woff'),
+		 url('../fonts/confirm/MullerBold.ttf') format('truetype'),
+		 url('../fonts/confirm/MullerBold.svg#MullerBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@import '_css/bootstrap.min.css'
+@import '_css/intlTelInput.min.css'
+
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: 'Muller',sans-serif
+	color #000
+	background-color #fff
+a
+	color: #000
+	&:focus
+		outline: 0
+		text-decoration none
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+
+#confirm
+	padding 0 0 20px
+	// min-height calc(100vh - 50px)
+	background-image url(../img/confirm/confirm-img.png)
+	background-repeat no-repeat
+	background-position: bottom right -200px
+	.container
+		position relative
+header
+	padding 10px 0
+	overflow hidden
+	margin-bottom: 20px
+.header-logo
+	width 120px
+	height 53px
+	float left
+	background-image url(../img/confirm/confirm-logo.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size contain
+.contacts
+	float: right
+	line-height: 46px
+	text-align: right
+.contact
+	font-size: 16px
+	color #000
+	display: inline-block
+	margin-left: 23px
+	&:focus
+		color #000
+		text-decoration: none
+	&:hover
+		color #000
+		text-decoration: underline
+	&&-phone
+		margin-left: 0
+.main-title
+	position absolute
+	top 40px
+	right 240px
+	width 458px
+	height 406px
+	background-image url(../img/confirm/title-bg.png)
+	background-repeat no-repeat
+	background-position: center
+	text-align: center
+	font-size: 48px
+	font-family: 'GilroyBlack', sans-serif
+	color #fff
+	text-transform uppercase
+	padding 110px 90px 0
+	line-height: 43px
+	span
+		display block
+		font-size: 22px
+		font-family: 'GilroyMedium', sans-serif
+		line-height: 23px
+.main-text
+	font-size: 20px
+	line-height: 25px
+	width 100%
+	span
+		color #7c136c
+		font-family: 'MullerBold', sans-serif
+	&:nth-of-type(1)
+		max-width 415px
+		span
+			display block
+	&:nth-of-type(2)
+		margin 50px 0
+		max-width 475px
+		span
+			text-transform: uppercase
+	&:nth-of-type(3)
+		font-size: 22px
+		font-family: 'MullerBold', sans-serif
+		max-width 565px
+		text-transform uppercase
+	&:nth-of-type(4)
+		font-family: 'MullerItalic', sans-serif
+		margin 30px 0
+		max-width 565px
+.mail
+	margin-right: 10px
+	display inline-block
+	background-repeat no-repeat
+	background-position: center
+	// background-size contain
+	height 31px
+	width 70px
+	&&-yandex
+		background-image url(../img/confirm/yandex.png)
+	&&-gmail
+		background-image url(../img/confirm/gmail.png)
+	&&-mailru
+		background-image url(../img/confirm/mailru.png)
+	&&-rambler
+		background-image url(../img/confirm/rambler.png)
+#phone-submit
+	padding 60px 0
+	background-color: #F3F3F3
+.phone-submit-title
+	width 100%
+	max-width 870px
+	margin 0 auto 40px
+	display flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-around
+	position relative
+	padding 60px 130px
+	background-image url(../img/confirm/phone-title.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: 100% 100%;
+	h3
+		font-size: 22px
+		font-family: 'Muller',sans-serif
+		color #fff
+		text-align: center
+		text-transform: uppercase
+		&:last-of-type
+			margin-top: 40px
+.form-promo
+	width 100%
+	max-width 507px
+	box-shadow: 0px 0px 36.1px 1.9px rgba(11, 11, 11, 0.16);
+	padding 60px 80px
+	background-color #fff
+	margin 0 auto 40px
+.intl-tel-input
+	display block
+	margin 0 auto 30px
+	width 100%
+	max-width 334px
+.input-phone
+	display block
+	width 100%
+	border: 1px solid #bf3d61
+	padding 11px 10px
+	color #aaa
+	background-color #fff
+@-webkit-keyframes autofill
+	to
+		color: #aaa
+		background-color: #fff
+input:-webkit-autofill
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+.button
+	width 100%
+	max-width 336px
+	display block
+	margin 0 auto
+	font-family: 'Muller', sans-serif
+	color #fff
+	font-size: 16px
+	line-height: 22px
+	padding 32px 10px
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	text-align: center
+	transition: all .2s ease
+	&-form
+		background-image url(../img/confirm/submit-button.png)
+	&-bots
+		background-image url(../img/confirm/end-reg--button.png)
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		text-decoration: none
+		color #fff
+		transform: scale(.9)
+.alert-message {
+	clear both
+	display: none;
+	font-size: 16px;
+	padding-top: 10px;
+	line-height: 16px
+	color: #f00
+	text-align: center
+}
+.checking {
+	display: table;
+	width 100%
+	max-width 507px
+	margin: 5px auto 0
+	text-align: left
+}
+
+.checking .check-label {
+	line-height: 17px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 40px;
+	text-align: left;
+	font-size: 14px
+	color #6f6e6e
+	font-family: 'Muller', sans-serif
+}
+
+.checking .check-label a
+	text-decoration: underline
+	display: inline
+	color #6f6e6e
+	&:focus
+		text-decoration: underline
+		color #6f6e6e
+	&:hover
+		text-decoration: none
+		color #6f6e6e
+
+.checking .check-label:before {
+	content: '';
+	background-color: red
+	position: absolute;
+	left: 0;
+	top: 3px;
+	width: 31px;
+	height: 31px;
+	border 0
+	border-radius: 0
+}
+
+.checking .check-label:after {
+	content: '';
+	position: absolute;
+	left: 12px;
+	top: -12px;
+	width: 8px;
+	height: 16px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 2px solid #fff
+	border-right: 2px solid #fff
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check-label:before {
+	background-color: #21283b
+
+}
+
+.check:checked + .check-label:after {
+	opacity: 1;
+	top: 8px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.soc-buttons
+	img
+		position relative
+		right -60px
+		bottom: -60px
+		display block
+footer
+	background-color: #21283b
+	padding 35px 0
+	color #f3f3f3
+	text-align: center
+	font-family: 'Muller', sans-serif
+	font-size: 18px
+.modal-backdrop.in
+	opacity .8
+.modal-content
+	border-radius: 0
+	border: 0
+.modal-dialog
+	width 684px
+button.close
+	position: absolute
+	font-size: 24px
+	text-align: center
+	background-color transparent
+	top 10px
+	right 10px
+	font-family: 'MullerBold', sans-serif
+	border-radius: 50px
+	border: 1px solid #000
+	color #000
+	opacity 1
+	width 26px
+	height 26px
+	padding 0
+	z-index 99
+	line-height: 26px
+	transition: all .3s ease
+	&:hover
+		opacity .5
+		transform: rotate(45deg)
+.modal-title
+	text-transform: uppercase
+	width 88%
+	font-family: 'MullerBold', sans-serif
+	font-size: 20px
+	width 88%
+	line-height: 1
+	margin 0
+	text-align: left 
+	small
+		font-family:  'Muller', sans-serif
+		font-size: initial
+		text-transform: none
+.politics_modal-content
+	p
+		margin-bottom: 10px
+		font-size: 16px
+		&:last-of-type
+			margin-bottom: 0
+@media screen and (min-width 1920px)
+	header
+		margin-bottom 50px
+	.main-title
+		right 200px
+@media screen and (min-width 2295px)
+	.container
+		width 1400px
+	.main-title
+		top 50px
+		right 440px
+@media screen and (max-width 1199px)
+	#confirm
+		background-position: bottom -300px right -300px
+	.main-title
+		right 0
+	.soc-buttons img
+		right 0
+@media screen and (max-width 991px)
+	#confirm
+		background-image: none
+	.main-title
+		position: static
+		margin 0 auto 40px
+	.main-text:nth-of-type(1)
+	.main-text:nth-of-type(2)
+	.main-text:nth-of-type(3)
+	.main-text:nth-of-type(4)
+		max-width 100%
+	.main-text:nth-of-type(2)
+		margin 30px 0
+	#phone-submit
+		padding 40px 0
+	.phone-submit-title
+		padding 60px 65px
+		background-size: 100% 100%;
+	.phone-submit-title h3:last-of-type
+		margin-top: 10px
+	.soc-buttons img
+		bottom: -40px
+		right auto
+		left -70px
+@media screen and (max-width 767px)
+	.header-logo
+		display block
+		width 100px
+		height 44px
+		float: none
+		margin 0 auto 5px
+	.contacts
+		line-height: 1
+		text-align: center
+		float: none
+	.modal-dialog
+		width auto
+		margin 10px
+	.soc-buttons img
+		display block
+		left -20px
+		margin 20px auto 0
+@media screen and (max-width 485px)
+	.header-logo
+		width 70px
+		height 31px
+	.main-title
+		width 100%
+		padding 30% 20% 0
+		font-size: 32px
+		line-height: 1
+		background-size contain
+		span
+			margin-top: 10px
+	.main-text
+	.main-text:nth-of-type(3)
+		font-size: 18px
+	.main-text:nth-of-type(2)
+	.main-text:nth-of-type(4)
+		margin 20px 0
+	.phone-submit-title
+		padding 0
+		background-image none
+		h3
+			font-size: 18px
+			color: #000
+	.form-promo
+		padding 30px
+		margin-bottom: 20px
+	footer
+		padding: 15px 0
+		font-size: 14px
+	.modal-title
+		font-size: 16px
+@media screen and (max-width 385px)
+	.contact
+		display: block
+		margin-left: 0
+		font-size: 14px
+	.main-title
+		padding 0
+		height auto
+		font-size: 30px
+		color #7c136c
+		background-image: none
+		margin-bottom: 20px
+		text-align: left
+	.mail
+		width 50%
+		margin-right: 0
+	#phone-submit
+		padding 30px 0
+	.phone-submit-title
+		margin-bottom: 20px
+		h3
+			font-size: 16px
+	.form-promo
+		padding 30px 15px
+	.intl-tel-input
+		margin-bottom: 15px
+	.soc-buttons img
+		width 100%
+		margin-top: 10px
+		bottom: -30px
+	.button
+		padding 22px 10px
